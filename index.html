@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Giraffe</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --gold:#c89b3c;
+    --dark:#2b2b2b;
+    --light:#f6f1e7;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height:1.6;
+}
+
+h1,h2,h3{
+    font-family:'Playfair Display', serif;
+    font-weight:600;
+}
+
+section{
+    padding: 0 200px;
+    margin-bottom: 100px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    margin-right:15px;
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#a67c2e;
+}
+
+.btn-outline{
+    border:1px solid var(--dark);
+    color:var(--dark);
+}
+
+.btn-outline:hover{
+    background:var(--dark);
+    color:#fff;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:linear-gradient(to right, #f6f1e7 50%, #f3d18a 50%);
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    margin-bottom:30px;
+    max-width:500px;
+}
+
+.hero-img{
+    width:45%;
+}
+
+.hero-img img{
+    width:100%;
+}
+
+/* About */
+.about{
+    background:#f1e9dc;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:36px;
+}
+
+.about p{
+    max-width:700px;
+}
+
+/* Services */
+.services{
+    text-align:center;
+}
+
+.services h2{
+    margin-bottom:60px;
+    font-size:34px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.service-item h3{
+    margin-bottom:15px;
+    color:var(--gold);
+}
+
+/* Banner Section */
+.banner{
+    background:url('/mnt/data/WhatsApp Image 2026-02-18 at 14.31.52.jpeg') center/cover no-repeat;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.banner h2{
+    font-size:42px;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+}
+
+.cta h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    margin-bottom:30px;
+}
+
+.email{
+    margin-top:20px;
+    font-size:18px;
+    color:var(--gold);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    font-size:14px;
+    background:#eee4d4;
+}
+
+
+.split-section{
+    display:flex;
+    align-items:stretch;
+    justify-content:space-between;
+    background:linear-gradient(to right, #f6f1e7 60%, #f3d18a 40%);
+    min-height:500px;
+}
+
+.split-text{
+    width:55%;
+    padding:100px 10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero-content{
+    margin-bottom:80px;
+}
+
+.split-text h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.split-text h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.split-text p{
+    max-width:500px;
+    margin-bottom:25px;
+}
+
+.split-image{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.split-image img{
+    height:700px;        /* Fixed height */
+    width:auto;
+    object-fit:cover;
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+
+<!-- HERO + ABOUT WRAPPER -->
+<section class="split-section">
+    <div class="split-text">
+
+        <!-- HERO TEXT -->
+        <div class="hero-content">
+            <h1>Stand Tall. See Farther.</h1>
+            <p>
+                We help ideas grow into thoughtful, confident brands that shine — 
+                with clarity, character, and quiet strength.
+            </p>
+            <a href="#" class="btn btn-primary">Explore Our Work</a>
+            <a href="#" class="btn btn-outline">Start a Conversation</a>
+        </div>
+
+        <!-- ABOUT TEXT -->
+        <div class="about-content">
+            <h2>Hey, We’re Glad You’re Here</h2>
+            <p>
+                We’ve always loved giraffes — calm, graceful, quietly confident. 
+                They don’t rush. They don’t compete.  
+                They simply stand tall, and see farther.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- COMMON RIGHT IMAGE -->
+    <div class="split-image">
+        <img src="/images/golden-giraffe.png" alt="Golden Giraffe">
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <div class="container">
+        <h2>Helping your brand look, feel, and sound like you — with purpose and soul.</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>Branding</h3>
+                <p>Names, logos, taglines, tone — everything that gives your brand personality and presence.</p>
+            </div>
+            <div class="service-item">
+                <h3>Design</h3>
+                <p>From logos to packaging — including visiting cards, brochures, and all brand collaterals.</p>
+            </div>
+            <div class="service-item">
+                <h3>Marketing</h3>
+                <p>Smart, simple, human marketing. From social strategy to campaign ideas that connect.</p>
+            </div>
+            <div class="service-item">
+                <h3>Product Visualization</h3>
+                <p>Realistic 3D renders and mockups that bring your product ideas to life beautifully and precisely.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BANNER -->
+<section class="banner">
+    <h2>Design that sees beyond the obvious.</h2>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Let’s Create Something Beautiful.</h2>
+    <p>Whether you’re launching something new or refreshing something old — let’s talk ideas.</p>
+    <a href="mailto:longneck@goldengiraffe.net" class="btn btn-primary">Say Hello</a>
+    <div class="email">longneck@goldengiraffe.net</div>
+</section>
+
+<footer>
+    Designed by Indsys.
+</footer>
+
+</body>
+</html>

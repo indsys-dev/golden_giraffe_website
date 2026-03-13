@@ -61,6 +61,20 @@ section{
     color:#fff;
 }
 
+.btn-whatsapp{
+    border-color: rgba(255, 255, 255, 0.9);
+    color:#fff;
+    background: rgba(200, 155, 60, 0.18);
+    box-shadow: 0 0 18px rgba(200, 155, 60, 0.35);
+}
+
+.btn-whatsapp:hover{
+    background: var(--gold);
+    border-color: var(--gold);
+    color:#fff;
+    box-shadow: 0 0 24px rgba(200, 155, 60, 0.55);
+}
+
 /* HERO */
 .hero{
     display:flex;

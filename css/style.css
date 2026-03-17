@@ -269,12 +269,11 @@ footer{
 }
 
 .icon-crop img {
-  width: calc(100% + 40px);  /* 20px left + 20px right */
+  width: calc(100% + 34px);  /* 20px left + 20px right */
   height: calc(100% + 40px); /* 20px top + 20px bottom */
   object-fit: cover;
   transform: translate(-20px, -20px);
 }   
-
 /* =========================
    MOBILE RESPONSIVE
 ========================= */

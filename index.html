@@ -6,52 +6,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden Giraffe</title>
 
-    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <!-- Your CSS File -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .info-cards-row {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .info-cards-row + .info-cards-row {
+            margin-top: 24px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 20px;
+            padding: 32px 24px;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .info-card-wide {
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .info-card-half {
+            flex: 1 1 320px;
+            max-width: 360px;
+        }
+
+        .quote-banner {
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 0px;
+        }
+
+        .quote-banner-title {
+            color: #e9a84c;
+            font-size: 58px;
+            max-width: none;
+            line-height: 1.15;
+            white-space: nowrap;
+            margin: 0;
+        }
+
+        .quote-banner-inner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 200px;
+            /* padding-left: 120px; */
+        }
+
+        @media (max-width: 768px) {
+            .info-cards-row {
+                gap: 18px;
+            }
+
+            .info-card {
+                width: 100%;
+                max-width: 100%;
+                padding: 24px 18px;
+            }
+
+            .info-card h2 {
+                font-size: 28px !important;
+            }
+
+            .quote-banner {
+                min-height: 320px;
+                padding: 16px;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .quote-banner-title {
+                font-size: 34px;
+                max-width: 100%;
+                white-space: normal;
+            }
+
+            .quote-banner-inner {
+                padding-left: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .quote-banner-title {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HERO -->
-
-    <!-- HERO + ABOUT WRAPPER -->
     <section class="split-section"
         style="background: url('images/banner1.png') no-repeat center center; background-size: cover;">
         <div class="split-text">
-
-            <!-- HERO TEXT -->
             <div class="hero-content">
-                <h1>Stand Tall. See Farther.</h1>
+                <h1>Ascend. See Farther.</h1>
                 <p>
-                    We help ideas grow into thoughtful, confident brands that shine —
-                    with clarity, character, and quiet strength.
+                    We help ideas grow into thoughtful, confident brands that shine.
                 </p>
                 <a href="https://wa.me/918870788703" class="btn btn-outline btn-whatsapp">Start a Conversation</a>
             </div>
 
-            <!-- ABOUT TEXT -->
             <div class="about-content">
-                <h2>Hey, We’re Glad You’re Here</h2>
+                <h2>Hey, We're Glad You're Here</h2>
                 <p>
-                    We’ve always loved giraffes — calm, graceful, quietly confident.
-                    They don’t rush. They don’t compete.
-                    They simply stand tall, and see farther.
+                    We've always loved giraffes - calm, graceful, and quietly confident. They don't rush or compete.
+                    They simply stand tall and see farther.
+                </p>
+                <p>
+                    That's exactly how we see brands - each one with its own height, voice, and view of the world.
+                    Golden Giraffe was born from that belief - to help ideas grow into thoughtful, confident brands
+                    that shine.
                 </p>
             </div>
-
         </div>
     </section>
 
-    <!-- SERVICES -->
+    <section class="about"
+        style="background: url('images/banner2.png') no-repeat center center; background-size: cover;">
+        <div class="container" style="max-width: 1200px;">
+            <div class="info-cards-row">
+                <div class="info-card info-card-wide">
+                    <h2 style="font-size: 34px; margin-bottom: 20px;">Who We Are</h2>
+                    <p style="margin-bottom: 20px;">
+                        We're a group of young, passionate creatives who believe good design has the power to move
+                        people. Each of us brings a unique blend of imagination and experience across branding,
+                        design, marketing, and product visualization - helping brands tell their stories beautifully
+                        and effectively.
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                        We think, question, experiment, and sometimes doodle on napkins - because great ideas rarely
+                        come from the ordinary. What connects us is our shared love for meaningful design and our
+                        obsession with the little details that make brands unforgettable.
+                    </p>
+                    <p>
+                        At Golden Giraffe, we don't just work for brands; we grow with them - shaping ideas that feel
+                        personal, purposeful, and proudly different.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-cards-row">
+                <div class="info-card info-card-half">
+                    <h2 style="font-size: 34px; margin-bottom: 20px;">How We Work</h2>
+                    <p style="margin-bottom: 20px;">
+                        We don't chase trends for the sake of it. We believe in ideas that make people stop, smile,
+                        and feel something.
+                    </p>
+                    <p>
+                        Every project we take on gets equal parts strategy, curiosity, and creativity - with a good
+                        dose of caffeine and humor on the side.
+                    </p>
+                </div>
+
+                <div class="info-card info-card-half">
+                    <h2 style="font-size: 34px; margin-bottom: 20px;">Why the Giraffe?</h2>
+                    <p style="margin-bottom: 20px;">
+                        A giraffe doesn't try to be tall. It just is. That's how we think brands should be -
+                        authentic, confident, and effortlessly noticeable.
+                    </p>
+                    <p>
+                        Our goal? To help your brand find its golden height and stand tall in its space - with a
+                        story that feels true to you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="banner">
         <section class="services">
             <div class="container">
                 <h2>
-                    Helping your brand look, feel, and sound like you — with purpose and soul.
+                    Helping your brand look, feel, and sound like you - with purpose and soul.
                 </h2>
 
                 <div class="service-grid">
@@ -63,7 +204,7 @@
                             </div>
                         </div>
                         <h3>Branding</h3>
-                        <p>Names, logos, taglines, tone — everything that gives your brand personality and presence.</p>
+                        <p>Names, logos, taglines, tone - everything that gives your brand personality and presence.</p>
                     </div>
 
                     <div class="service-item">
@@ -74,7 +215,11 @@
 
                         </div>
                         <h3>Design</h3>
-                        <p>From logos to packaging — including visiting cards, brochures, and all brand collaterals.</p>
+                        <p>
+                            From logos to packaging - including visiting cards, brochures, and all brand collaterals.
+                            Visuals that don't just look good, but mean something. Digital, print, and packaging -
+                            all crafted with care.
+                        </p>
                     </div>
 
                     <div class="service-item">
@@ -85,7 +230,8 @@
 
                         </div>
                         <h3>Marketing</h3>
-                        <p>Smart, simple, human marketing. From social strategy to campaign ideas that connect.</p>
+                        <p>Smart, simple, human marketing. From social strategy to campaign ideas that connect, not
+                            just convert.</p>
                     </div>
 
                     <div class="service-item">
@@ -96,8 +242,10 @@
 
                         </div>
                         <h3>Product Visualization</h3>
-                        <p>Realistic 3D renders and mockups that bring your product ideas to life beautifully and
-                            precisely.</p>
+                        <p>
+                            Bringing your product ideas to life through realistic 3D renders, concept visuals, and
+                            mockups that showcase every detail beautifully.
+                        </p>
                     </div>
 
                 </div>
@@ -105,19 +253,27 @@
         </section>
     </section>
 
-    <!-- BANNER -->
     <section class="banner"
-        style="background: url('images/banner3.png') no-repeat center center; background-size: cover; height: 500px;">
+        style="background: url('images/banner3new.png') no-repeat center center; background-size: cover; height: 500px;">
+        <div class="quote-banner">
+            <div class="quote-banner-inner">
+                <h2 class="quote-banner-title">Design that sees beyond the obvious</h2>
+            </div>
+        </div>
     </section>
 
-    <!-- CTA -->
     <section class="banner"
         style="background: url('images/banner2.png') no-repeat center center; background-size: cover;">
         <section class="cta">
-            <h2>Let’s Create Something Beautiful.</h2>
-            <p>Whether you’re launching something new or refreshing something old — let’s talk ideas.</p>
+            <h2>Let's Create Something Beautiful</h2>
+            <p>
+                Whether you're launching a new brand, refreshing an old one, or just looking for a creative spark -
+                let's talk ideas.
+            </p>
             <a href="mailto:longneck@goldengiraffe.net" class="btn btn-primary">Say Hello</a>
             <div class="email">longneck@goldengiraffe.net</div>
+            <p style="margin-top: 20px; margin-bottom: 10px;">We reply personally - always. No bots, no templates. Just real conversation.</p>
+            <p>Designed with thought. Built with soul.</p>
         </section>
     </section>
 
